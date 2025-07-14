@@ -1,12 +1,15 @@
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
-import ClientsDashboard from "./components/ClientsDashboard";
-
+import BettingHeader from "./components/BettingHeader";
+import CricketBettingUI from "./readybook";
 
 export default function Home() {
   return (
     <>
-  <ClientsDashboard/>
+      <div className="min-h-screen bg-gray-50">
+        <BettingHeader />
+        <CricketBettingUI />
+      </div>
     </>
   );
 }
