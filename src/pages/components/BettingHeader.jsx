@@ -284,30 +284,6 @@ export default function BettingHeader() {
           )}
         </nav>
       </div>
-
-      <style jsx>{`
-        .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-        }
-      `}</style>
-
-      <style jsx>{`
-        @keyframes slideInLeft {
-          from {
-            transform: translateX(-100%);
-          }
-          to {
-            transform: translateX(0);
-          }
-        }
-        .animate-slideInLeft {
-          animation: slideInLeft 0.25s cubic-bezier(0.4, 0, 0.2, 1) both;
-        }
-      `}</style>
     </header>
   );
 }
